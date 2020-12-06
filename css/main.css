@@ -54,7 +54,7 @@ ul {
   background: white;
   padding: 0 2rem;
   height: 0rem;
-  min-height: 40vh;
+  min-height: 100vh;
 }
 
 .nav .nav-menu {
@@ -106,3 +106,12 @@ ul {
 }
 
 /*----x---- navbar ---x---*/
+
+/* Viewport less then or equal to 750px */
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu, .nav .nav-items {
+    flex-direction: column;
+  }
+}
+/* Viewport less then or equal to 750px */
+/* Viewport less then or equal to 750px */

@@ -125,7 +125,9 @@ use this block of code in the CSS:
 
 ```
 @media only screen and (max-width: 750px) {
-  
+ /* CSS styles go here */* 
 }
 ```
+
+Now I can put whatever CSS styling you want the page to have for the specified 750px width. this is about the size of a small tablet.
 
