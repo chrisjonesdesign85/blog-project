@@ -70,11 +70,22 @@ ul {
   padding: 1.6rem 1rem;
   font-size: 1.1rem;
   position: relative;
+  font-family: var(--Abel);
+  font-size: 1.1rem;
 }
+.nav .nav-items .nav-link:hover {
+  background-color: var(--midnight);
+
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: var(--white);
+}
+
 
 .nav .nav-brand a {
   /* font-family: Abel,cursive; */
-  font-family: var(--Abel);
+  font-family: var(--Lexend);
   font-size: 1.6rem;
   padding: 1rem 0;
   text-decoration: none;
@@ -83,6 +94,15 @@ ul {
 
 .nav .social {
   padding: 1.4rem 0;
+}
+
+.nav .social i {
+  padding: 0.2rem;
+
+}
+
+.nav .social i:hover {
+  color: #a1c4cf;
 }
 
 /*----x---- navbar ---x---*/

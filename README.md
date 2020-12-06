@@ -3,7 +3,7 @@
 Be sure to link the `all.css` file in your index file, and 
 use `<i class="fab fa-instagram">` to put what ever icon you want to use on your page.
 
-## Using Fonts
+## FONTS
 
 
 How to add fonts from google to your site
@@ -97,14 +97,28 @@ within the root properties like with the fonts place the variable:
 
 now when I want to use that color on something all I have to do is put `--text-grey` and vs code will make it `var(--text-grey);`
 
-[http://colors.co](http://colors.co)
+[colors.co](http://colors.co)
 
 To get cool color themes and their HEX values.
 
 # gradient color
 
-[webgradients.com](htt:/webgradients.com)
+[webgradients.com](http:/webgradients.com)
   
 This site has a log of really cool pre made gradients and you can just copy the css and make a variable for it too with the other colors:
 
 `--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);`
+
+---
+
+<!-- added nav hover effect on links and social -->
+
+# RESPONSIVE NAV
+
+To make the nav bar responsive we need to use media queries.
+
+# Media Queries.
+
+Media queries are like set points where you want the style of the page to change like have a media query for mobile, one for tablet, and one for Desktop for instance.
+
+use this block of code in the CSS
