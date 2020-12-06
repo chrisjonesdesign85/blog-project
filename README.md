@@ -121,4 +121,11 @@ To make the nav bar responsive we need to use media queries.
 
 Media queries are like set points where you want the style of the page to change like have a media query for mobile, one for tablet, and one for Desktop for instance.
 
-use this block of code in the CSS
+use this block of code in the CSS:
+
+```
+@media only screen and (max-width: 750px) {
+  
+}
+```
+
