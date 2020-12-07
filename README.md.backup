@@ -167,7 +167,26 @@ CSS:
 
 ```
 
+This will position the hamburger menu over to the right side of the nav menu using the media query 750px.
 
 
+# Show / hide Hamburger Menu
 
+on the `.nav .toggle-collapse` selector add `display: none;
 
+Then in the `750px` media query put:
+
+```
+.nav .toggle-collapse {
+    display: initial;
+  }
+```
+`
+This will only display the hamburger menu when the width of the web page is at `750px` or less.
+
+# JQUERY
+
+[jquery.com](htt://www.jquery.com)
+
+Go to downloads and copy the compressed jquery file
+make a new file called `jquery.3.4.1.`
