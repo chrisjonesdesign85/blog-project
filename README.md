@@ -346,3 +346,13 @@ make a new file called `jquery.3.4.1.min.js` and paste the code, be sure to save
 
 The header is the content at the top of the page, usually a large colorful background, a title and usually a call to action button of some kind.
 
+This is just some basic HTML and CSS.
+
+---
+# Owl Carousel 
+[Owl Carousel gethub](https://owlcarousel2.github.io/OwlCarousel2/)
+
+download the files in a zip file then copy the main owl carousel js file into your projects js folder, then copy the css file and the them file into your projects css folder.
+
+Make sure to link all three of the files in the HTML file. 2 CSS and 1 JS.
+

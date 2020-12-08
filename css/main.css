@@ -73,6 +73,17 @@ button.btn {
   cursor: pointer;
 
 }
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 1px solid var(--white);
+  color: white;
+
+}
+
+
+
+
 /*-----x----- Global Classes -----x-----*/
 
 /*---------------- navbar --------------*/
@@ -200,6 +211,7 @@ main .site-title .btn {
   background: var(--sky);
 
 }
+
 
 /* end main content */
 
