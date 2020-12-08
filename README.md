@@ -1,10 +1,8 @@
-# BLOGGER SITE
-
+# Blogger Site
 ## by: Chris Jones
-
 ### 12-01-2020
 
-I am going to build a bloging website for my portfolio.
+I am going to build a blogging website for my portfolio.
 If I make a website everyday I will have alot
 of stuff to work with and show potential employers/clients and will
 give me a chance to brush up on my HTML and CSS / flexbox.
@@ -247,7 +245,7 @@ now when I want to use that color on something all I have to do is put `--text-g
 
 To get cool color themes and their HEX values.
 
-# gradient color
+# Gradient Color
 
 [webgradients.com](http:/webgradients.com)
 
@@ -333,15 +331,18 @@ Then in the `750px` media query put:
 
 `This will only display the hamburger menu when the width of the web page is at`750px` or less.
 
-# JQUERY
+# Jquery
 
 [jquery.com](htt://www.jquery.com)
 
 Go to downloads and copy the compressed jquery file
 make a new file called `jquery.3.4.1.min.js` and paste the code, be sure to save it.
 
-need to come back to this..
+[ need to come back to this.. ]
 
 ---
-
+#### 12/07/2020
 # The Header
+
+The header is the content at the top of the page, usually a large colorful background, a title and usually a call to action button of some kind.
+
