@@ -3,7 +3,7 @@
 Be sure to link the `all.css` file in your index file, and 
 use `<i class="fab fa-instagram">` to put what ever icon you want to use on your page.
 
-## FONTS
+## Fonts
 
 
 How to add fonts from google to your site
@@ -12,18 +12,20 @@ How to add fonts from google to your site
 
 The following fonts are used in this project:
 
----
-`Abel`
 
-`Livvic`
+```
 
-`Lexend Deca`
+Abel
 
-`Josefin Sans`
+Livvic
 
-`Anton`
+Lexend Deca
 
----
+Josefin Sans
+
+Anton
+
+```
 
 
 You can `<link>` the fonts, or download the fonts and use use `@import`.
@@ -80,15 +82,17 @@ use the key word `var` for variable and then put in the name you gave up above w
 *NOTE: If you are using VScode just type `--name of variable` and VScode will automatically put the ``var` keyword* 
 
 
-# COLORS
+# Colors
 
 Use color variables.
 
 ```
+
 a {
 	text-decoration: none;
 	color: #3f4959;
 }
+
 ```
 
 within the root properties like with the fonts place the variable:
@@ -113,20 +117,22 @@ This site has a log of really cool pre made gradients and you can just copy the 
 
 <!-- added nav hover effect on links and social -->
 
-# RESPONSIVE NAV
+# Responsive Navigation
 
 To make the nav bar responsive we need to use media queries.
 
-# Media Queries.
+# Media Queries
 
 Media queries are like set points where you want the style of the page to change like have a media query for mobile, one for tablet, and one for Desktop for instance.
 
 use this block of code in the CSS:
 
 ```
+
 @media only screen and (max-width: 750px) {
  /* CSS styles go here */* 
 }
+
 ```
 
 Now I can put whatever CSS styling you want the page to have for the specified 750px width. this is about the size of a small tablet.
@@ -136,6 +142,7 @@ Now I can put whatever CSS styling you want the page to have for the specified 7
 HTML:  
 
 ```
+
 <div class="toggle-collapse">
                 <div class="toggle-icons">
                     <i class="fas fa-bars"></i>
@@ -177,9 +184,11 @@ on the `.nav .toggle-collapse` selector add `display: none;
 Then in the `750px` media query put:
 
 ```
+
 .nav .toggle-collapse {
     display: initial;
   }
+  
 ```
 `
 This will only display the hamburger menu when the width of the web page is at `750px` or less.
@@ -189,4 +198,10 @@ This will only display the hamburger menu when the width of the web page is at `
 [jquery.com](htt://www.jquery.com)
 
 Go to downloads and copy the compressed jquery file
-make a new file called `jquery.3.4.1.min.js` and paste the code.
+make a new file called `jquery.3.4.1.min.js` and paste the code, be sure to save it.
+
+need to come back to this..
+
+---
+# The Header
+

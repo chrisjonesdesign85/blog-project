@@ -16,9 +16,8 @@ body {
   --midnight: #104f55;
 
   /* gradient color */
-  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-
+  --sky: linear-gradient(120deg, 
+  #a1c4fd 0%, #c2e9fb 100%);
 
   /* theme font-family */
   --Abel: 'Abel', cursive;
@@ -26,25 +25,27 @@ body {
   --Josefin: 'Josefin', cursive;
   --Lexend: 'Lexend', cursive;
   --Livvic: 'Livvic', cursive;
+
 }
-
-
 
 /*---------- Global Classes ----------*/
 
 a {
   text-decoration: none;
   color: var(--text-grey);
+
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 ul {
   list-style-type: none;
+
 }
 /*-----x----- Global Classes -----x-----*/
 
@@ -56,10 +57,13 @@ ul {
   height: 0rem;
   min-height: 10vh;
   overflow: hidden;
+  transition: height 1s ease-in-out;
+
 }
 
 .nav .nav-menu {
   justify-content: space-between;
+
 }
 
 .nav .toggle-collapse {
@@ -75,16 +79,24 @@ ul {
   display: flex;
   justify-content: flex-end;
   padding: 1.7rem 0;
+
 }
 
 .nav .toggle-collapse .toggle-icons i {
   font-size: 1.4rem;
   color: var(--text-grey);
+
+}
+
+.collapse {
+  min-height: 40vh;
+
 }
 
 .nav .nav-items {
   display: flex;
   margin: 0;
+
 }
 
 .nav .nav-items .nav-link {
@@ -93,14 +105,18 @@ ul {
   position: relative;
   font-family: var(--Abel);
   font-size: 1.1rem;
+
 }
+
 .nav .nav-items .nav-link:hover {
   background-color: var(--midnight);
+  border: 2rem, bold, red;
 
 }
 
 .nav .nav-items .nav-link:hover a {
   color: var(--white);
+
 }
 
 
@@ -111,22 +127,29 @@ ul {
   padding: 1rem 0;
   text-decoration: none;
   display: block;
+
 }
 
 .nav .social {
   padding: 1.4rem 0;
+
 }
 
 .nav .social i {
   padding: 0.2rem;
 
+
 }
 
 .nav .social i:hover {
   color: #a1c4cf;
+
 }
 
 /*----x---- navbar ---x---*/
+
+
+
 
 
 /* Viewport less then or equal to 750px */
