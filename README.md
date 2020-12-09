@@ -358,3 +358,156 @@ download the files in a zip file then copy the main owl carousel js file into yo
 
 Make sure to link all three of the files in the HTML file. 2 CSS and 1 JS.
 
+THE HTML:
+
+```
+
+ <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content">
+                            <img src="./assets/Blog-post/post-1.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>London Fashion Week's Continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/Blog-post/post-3.jpg" alt="post-3">
+                            <div class="blog-title">
+                                <h3>London Fashion Week's Continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/Blog-post/post-2.jpg" alt="post-2">
+                            <div class="blog-title">
+                                <h3>London Fashion Week's Continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <img src="./assets/Blog-post/post-5.png" alt="post-5">
+                            <div class="blog-title">
+                                <h3>London Fashion Week's Continued the evolution</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span> 
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+```
+
+THE CSS:
+
+```
+
+main .blog {
+  background: url('../assets/Abract01.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65%;
+  padding-top: 6rem;
+  height: 100vh;
+  width: 100%;
+
+}
+
+main .blog .blog-post {
+  padding-top: 6rem;
+
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-directioN: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+
+}
+
+main .blog-content .btn-blog {
+  padding: .7rem 2rem;
+  background: var(--sky);
+  margin: .5rem;
+}
+
+main .blog-content span {
+  display: block;
+
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev, 
+.owl-nav .owl-next .owl-nav-next {
+  color: var(--midnight);
+  background: transparent;
+  font-size: 2rem;
+  
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent;
+  color: var(--text-grey);
+  border: none;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+  outline: none;
+}
+
+```
+
+JS:
+
+```
+
+ $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')]
+    });
+
+```
+
+
+
+Don't forget to link the JS.
+
+```
+
+ <!-- Carousel-JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+```
+
+
+
