@@ -551,3 +551,12 @@ main .site-content {
 I have finished the first blog post. Now to just copy and paste and change the content to add more blog posts on the site-content section.
 
 Added the pagination.
+
+# Side Bar
+
+### Popular Posts
+Here I basically copied the blog posts and added them to the side bar. I changed the pictures.
+
+### Newsletter
+Added a text form with a button under it.
+
