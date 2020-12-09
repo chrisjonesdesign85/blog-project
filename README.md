@@ -11,7 +11,7 @@ give me a chance to brush up on my HTML and CSS / flexbox.
 
 ```
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">	
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,6 +71,7 @@ body {
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+
 }
 
 /*---------- Global Classes ----------*/
@@ -271,6 +272,7 @@ use this block of code in the CSS:
 
 @media only screen and (max-width: 750px) {
  /* CSS styles go here */*
+
 }
 
 ```

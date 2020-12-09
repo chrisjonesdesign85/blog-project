@@ -16,16 +16,14 @@ body {
   --midnight: #104f55;
 
   /* gradient color */
-  --sky: linear-gradient(120deg, 
-  #a1c4fd 0%, #c2e9fb 100%);
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
   /* theme font-family */
-  --Abel: 'Abel', cursive;
-  --Anton: 'Anton', cursive;
-  --Josefin: 'Josefin', cursive;
-  --Lexend: 'Lexend', cursive;
-  --Livvic: 'Livvic', cursive;
-
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
 }
 
 /*---------- Global Classes ----------*/
@@ -33,25 +31,21 @@ body {
 a {
   text-decoration: none;
   color: var(--text-grey);
-
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 ul {
   list-style-type: none;
-
 }
 
 h1 {
   font-family: var(--Lexend);
   font-size: 2.5rem;
-
 }
 
 h2 {
@@ -61,7 +55,6 @@ h2 {
 h3 {
   font-family: var(--Abel);
   font-size: 1.3rem;
-
 }
 
 button.btn {
@@ -71,18 +64,13 @@ button.btn {
   font-size: 1rem;
   font-family: var(--Livvic);
   cursor: pointer;
-
 }
 
 main .site-title .btn:hover {
   background: transparent;
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   color: white;
-
 }
-
-
-
 
 /*-----x----- Global Classes -----x-----*/
 
@@ -92,15 +80,13 @@ main .site-title .btn:hover {
   background: white;
   padding: 0 2rem;
   height: 0rem;
-  min-height: 10vh;
+  min-height: 7vh;
   overflow: hidden;
   transition: height 1s ease-in-out;
-
 }
 
 .nav .nav-menu {
   justify-content: space-between;
-
 }
 
 .nav .toggle-collapse {
@@ -109,31 +95,26 @@ main .site-title .btn:hover {
   width: 90%;
   cursor: pointer;
   display: none;
-
 }
 
 .nav .toggle-collapse .toggle-icons {
   display: flex;
   justify-content: flex-end;
   padding: 1.7rem 0;
-
 }
 
 .nav .toggle-collapse .toggle-icons i {
   font-size: 1.4rem;
   color: var(--text-grey);
-
 }
 
 .collapse {
-  min-height: 40vh;
-
+  height: 30rem;
 }
 
 .nav .nav-items {
   display: flex;
   margin: 0;
-
 }
 
 .nav .nav-items .nav-link {
@@ -142,20 +123,15 @@ main .site-title .btn:hover {
   position: relative;
   font-family: var(--Abel);
   font-size: 1.1rem;
-
 }
 
 .nav .nav-items .nav-link:hover {
   background-color: var(--midnight);
-  border: 2rem, bold, red;
-
 }
 
 .nav .nav-items .nav-link:hover a {
   color: var(--white);
-
 }
-
 
 .nav .nav-brand a {
   /* font-family: Abel,cursive; */
@@ -164,65 +140,93 @@ main .site-title .btn:hover {
   padding: 1rem 0;
   text-decoration: none;
   display: block;
-
 }
 
 .nav .social {
   padding: 1.4rem 0;
-
 }
 
 .nav .social i {
-  padding: 0.2rem;
-
-
+  padding: 0 0.2rem;
 }
 
 .nav .social i:hover {
   color: #a1c4cf;
-
 }
 
 /*----x---- navbar ---x---*/
 
 /* Main content */
+
+/* site-title */
+
 main .site-title {
-background: url("../assets/Background-image.png");
-background-size: cover;
-height: 110vh;
-display: flex;
-justify-content: center;
+  background: url("../assets/Background-image.png");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
 }
 
 main .site-title .site-background {
   padding-top: 10rem;
   text-align: center;
   color: var(--white);
-
 }
 
-main .site-title h1,h3 {
-  margin: .3rem;
-
+main .site-title h1,
+h3 {
+  margin: 0.3rem;
 }
 
 main .site-title .btn {
   margin: 1.8rem;
   background: var(--sky);
+}
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+/*--x--< site-title >--x--*/
+
+/* Blog Carousel */
+main .blog {
+  background: url('../assets/Abract01.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
 
 }
 
+main .blog .blog-post {
+  padding-top: 6rem;
+
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-directioN: column;
+  text-align: center;
+  width: 80%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+
+/* end Blog Carousel */
 
 /* end main content */
-
-
 
 /* Viewport less then or equal to 750px */
 
 @media only screen and (max-width: 750px) {
-  .nav .nav-menu, .nav .nav-items {
+  .nav .nav-menu,
+  .nav .nav-items {
     flex-direction: column;
-  
   }
 
   .nav .toggle-collapse {
