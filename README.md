@@ -560,3 +560,5 @@ Here I basically copied the blog posts and added them to the side bar. I changed
 ### Newsletter
 Added a text form with a button under it.
 
+### Popular Tags
+Added a popular tags section to the bottom of the side bar.
