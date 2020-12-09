@@ -511,3 +511,41 @@ Don't forget to link the JS.
 
 
 
+# Site Content
+
+Here I am going to create two columns using CSS Grid.
+
+### How to use CSS Grid:
+In the HTML make two divs one called posts and one called sidebar which is an HTML5 aside. Next, in the CSS I put `display: grid` and added the two columns `grid-template-column: 70% 30%` See code below.
+
+HTML:
+
+```
+
+<section class="container">
+	<div class="site-content">
+    	<div class="posts">
+        	<h1>Blog Posts</h1>
+        </div><!-- end blog posts -->
+        <aside class="sidebar">
+        	<h1>Sidebar</h1>
+        </aside>
+    </div>
+</section>
+
+```
+
+CSS:
+
+```
+
+main .site-content {
+	display: grid;
+	grid-template-column: 70% 30%;
+}
+
+```
+
+`&nbsp;` = none breaking space.
+
+I have finished the first blog post. Now to just copy and paste and change the content to add more blog posts on the site-content section.
