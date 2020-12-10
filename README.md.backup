@@ -648,7 +648,7 @@ added the last line to the JS code.
 ```
 
 
-### make the rest of the site responsive with media quires. 
+### make the rest of the site responsive with Media Queries. 
 
 ```
 
@@ -722,3 +722,22 @@ added the last line to the JS code.
 
 ```
 
+# JS Effects
+## scroll animation
+### AOS
+
+[https://michalsnik.github.io/aos/](https://michalsnik.github.io/aos/)
+
+This is a good site for animations.
+
+example: `<div data-aos="fade-right" data-aos-delay="200"></div>`
+
+I added animations to all the sections to make it more interactive and have things moving.
+
+This has been a fun project.
+
+Stay tuned till the next one.
+
+`--Chris`
+
+[chrisjonesdev.com](htt://www.chrisjonesdev.com)

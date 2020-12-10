@@ -41,4 +41,6 @@ $(document).ready(function() {
         },1000);
     })
 
+    // AOS Instance
+    AOS.init();
 });
