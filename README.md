@@ -562,3 +562,163 @@ Added a text form with a button under it.
 
 ### Popular Tags
 Added a popular tags section to the bottom of the side bar.
+
+# Footer
+In the footer I created 4 columns using this CSS code:
+
+```
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+```
+
+There is an About us, Newsletter, Instagram, and Follow us.
+
+### About us
+His just has a paragraph
+
+### Newsletter
+has a paragraph and a form element.
+
+### Instagram
+This section has a grid of 6 images, like instagram.
+
+### Follow us
+Paragraph and Social Icons.
+
+Under these columns is a copy right section.
+
+I also added a button to scroll to the top and used this Jquery code:
+
+```
+
+// click to scroll up
+    $('.move-up span').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        },1000);
+    })
+
+```
+
+The website is now complete! :)
+
+# Responsiveness 
+
+### made the carousel responsive in the JS
+
+```
+
+const responsive = {
+    0: {
+        items:1
+    },
+    320: {
+        items: 1
+    },
+    560: {
+        items: 2
+    },
+    960: {
+        items: 3
+    },
+}
+
+```
+
+added this to the top of the main JS file and added responsive variable to the carousel in the JS.
+
+added the last line to the JS code.
+
+```
+
+ $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')],
+        responsive: responsive
+    });
+    
+```
+
+
+### make the rest of the site responsive with Media Queries. 
+
+```
+
+/* media queries */
+
+/* Viewport less then or equal to 1130px */
+@media only screen and (max-width: 1130px) {
+  .site-content .post-content > .post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0% !important;
+
+  }
+  .site-content .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* x Viewport less then or equal to 1130px x */
+
+
+/* Viewport less then or equal to 750px */
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+
+  main .site-content {
+    grid-template-columns: 100%;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* x Viewport less then or equal to 750px x */
+
+/* Viewport less then or equal to 520px */
+@media only screen and (max-width: 520px) {
+  main .blog {
+    height: 125vh;
+  }
+
+  .site-content .post-content > .post-image .post-info {
+    display: none;
+  }
+
+  footer.footer .container > div {
+    padding: 1rem .9rem !important;
+  }
+
+  footer .rights {
+    padding: 0 1.4rem;
+    text-align: center;
+  }
+  nav .toggle-collapse {
+    width: 80% !important;
+  }
+}
+/* x Viewport less then or equal to 520px x */
+
+```
+
