@@ -139,7 +139,7 @@ navigation using fontawesome.
 download fontawesome from the [website](http://www.fontawesome.com)
 extract the files, and copy the `all.css` file and the `web fonts` folder.
 
-#### How to implement on the site.
+### How to implement on the site.
 
 `<i class = "fas fa-camera"></i>`<br><br>
 `<i class = "fas fa-camera"></i>`<br><br>
